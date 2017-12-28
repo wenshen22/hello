@@ -1,0 +1,9 @@
+1,配置密钥登录
+	ssh-keygen -t rsa -C 'peng_jin_fei@126.com'
+
+2,将生成的秘钥id_rsa.pub文件中的所有内容添加到GitHub上面New SSH key
+
+3,登录github
+	ssh git@github.com
+
+4,

@@ -3,5 +3,8 @@ public class User{
     private String password;
     
     
-    public User(){}
+    public User(){
+        this.username="xxxxxx";
+        this.password="123";
+    }
 }

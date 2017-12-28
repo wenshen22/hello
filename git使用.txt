@@ -7,3 +7,16 @@
 	ssh git@github.com
 
 4,
+
+
+
+
+
+创建分支
+git branch xxx         ----xxx为分支名字
+
+切换到分支
+git checkout xxx       ----切换到xxx分支
+
+合并分支
+git merge xxx		----将xxx分支的内容合并到master分支上

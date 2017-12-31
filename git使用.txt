@@ -20,3 +20,10 @@ git checkout xxx       ----切换到xxx分支
 
 合并分支
 git merge xxx		----将xxx分支的内容合并到master分支上
+
+
+
+
+
+添加了内容
+2017-12-31 09:04:28

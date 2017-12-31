@@ -1,0 +1,29 @@
+1,配置密钥登录
+	ssh-keygen -t rsa -C 'peng_jin_fei@126.com'
+
+2,将生成的秘钥id_rsa.pub文件中的所有内容添加到GitHub上面New SSH key
+
+3,登录github
+	ssh git@github.com
+
+4,
+
+
+
+
+
+创建分支
+git branch xxx         ----xxx为分支名字
+
+切换到分支
+git checkout xxx       ----切换到xxx分支
+
+合并分支
+git merge xxx		----将xxx分支的内容合并到master分支上
+
+
+
+
+
+添加了内容
+2017-12-31 09:04:28

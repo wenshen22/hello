@@ -1,0 +1,30 @@
+﻿Git 身份：
+	git config --global user.name "你的名字"
+	git config --global user.email "你的邮箱"
+Git 管理项目：
+	1. git init 在项目的根目录下执行
+		.gitignore 用touch .gitignore创建 
+			写一些规则用来过滤不需要的文件，比如字节码...
+	2. git add .(git add ./*) 用来跟踪项目中的文件 同一个文件一般验证 SHA1 是否相同
+	
+	3. git commit -m "这次提交你修改了什么"  把你的项目提交到本地的git仓库，
+				你可以理解为存了当前代码的一个镜像
+	4. git commit -a -m "" 可以代替2.3步
+常用命令：
+git diff  用来比较未被提交的文件内容 有哪些增加、删除
+git log  查看提交历史 每一次提交都有一个独立的ID 一般只使用完整ID的前6位
+git merge iss01  将iss01合并到当前分支
+git merge --no-ff iss01  将iss01合并到当前分支,保留分支的代码
+git branch iss01 创建一个名叫iss01的分支
+git branch -v  显示所有分支 当前分支会有特殊标记
+git checkout iss01 切换到iss01分支，之后每次commit都会保存到该分支
+git checkout ss25dg   ss25dg就是git log里面描述的完整ID的前6位
+git remote add orgin <远程仓库地址> 添加一个远程仓库地址 orgin是给那个仓库的名字
+git remote rm orgin 删除orgin仓库
+git remote -v  查看当前连接的所有远程仓库信息
+git rm <文件名或文件夹名> 移除对改文件的跟踪
+ssh-kengen -t rsa -C "你的邮箱"  生成秘钥 一般用cat ~/.ssh/id_rsa.pub 查看
+git status 查看当前项目的状态 那些文件被创建 被修改 被删除
+
+如果新建了一个文件 git 是没有对他进行跟踪的 你需要 git add <新建文件的文件名> 来进行跟踪
+否则 commit 时是不会记录他的
